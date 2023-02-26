@@ -30,7 +30,7 @@ You must have at least [Database User](access-control/role-based-access-control.
 |docstring|String|A description of the function.
 |folder|String|The name of the folder tag.
 |view|bool|Designates this function as a stored view.
-|skipvalidation|bool|When set to `true`, it will run validation logic on the function and fail if function isn't valid. (Default: `true`)
+|skipvalidation|bool|When set to `true`, it will run semantic validation on the function body and fail if function isn't semantically valid. Syntatic validations is always run, regardless of the value set on this parameter. (Default: `true`)
 |FunctionName(ParamName:ParamType)|String (String:datatype)|Name of the function, the parameter name and datatype.
 |FunctionBody|   | A user defined function expression.
 
